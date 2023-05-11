@@ -46,7 +46,7 @@ import TextExtension from '@tiptap/extension-text'
 import { Color as ColorExtension } from '@tiptap/extension-color'
 import HighlightExtension from '@tiptap/extension-highlight'
 import {mergeDeep} from "../../utils/merge";
-import { TOCExtension } from '../../features/toc/tableOfContents.js';
+//import { TOCExtension } from '../../features/toc/tableOfContents.js';
 
 
 const Wysiwyg = (opts) => {
@@ -136,7 +136,7 @@ const WysiwygContent = ({ name, onChange, value, intlLabel, labelAction, disable
       ListItemExtension,
       BulletListExtension,
       HeadingExtension,
-      TOCExtension,
+      //TOCExtension,
 
       settings.disableOrderedListShorthand ? CustomOrderedList : OrderedListExtension,
       settings.code ? CodeBlockExtension : null,
