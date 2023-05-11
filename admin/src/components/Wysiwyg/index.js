@@ -46,8 +46,8 @@ import TextExtension from '@tiptap/extension-text'
 import { Color as ColorExtension } from '@tiptap/extension-color'
 import HighlightExtension from '@tiptap/extension-highlight'
 import {mergeDeep} from "../../utils/merge";
-import { TOCExtension } from '../../features/toc';
-console.log(TOCExtension)
+import { TOCExtension } from '../../features/toc/tableOfContents.js';
+
 
 const Wysiwyg = (opts) => {
   const { name, onChange, value, intlLabel, labelAction, disabled, error, description, required } = opts
