@@ -3,7 +3,7 @@ import { ReactNodeViewRenderer } from '@tiptap/react'
 
 import { ToCArea as Component } from './component.jsx'
 
-const TOCExtension = Node.create({
+export const TOCExtension = Node.create({
     name: 'tableOfContents',
 
     group: 'block',
@@ -39,5 +39,3 @@ const TOCExtension = Node.create({
         ]
     },
 })
-
-export TOCExtension

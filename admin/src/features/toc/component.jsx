@@ -3,7 +3,7 @@ import './component.css'
 import { NodeViewWrapper } from '@tiptap/react'
 import { useCallback, useEffect, useState } from 'react'
 
-const ToCArea = ({ editor }) => {
+export const ToCArea = ({ editor }) => {
   const [items, setItems] = useState([])
 
   const handleUpdate = useCallback(() => {
@@ -63,5 +63,3 @@ const ToCArea = ({ editor }) => {
     </NodeViewWrapper>
   )
 }
-
-export ToCArea
