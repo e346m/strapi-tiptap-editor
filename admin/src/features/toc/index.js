@@ -1,2 +1,1 @@
-import TOC from "./tableOfContents";
-export default TOC;
+export { default } from "./tableOfContents";
