@@ -18,11 +18,7 @@ import Landscape from "@strapi/icons/Landscape"
 import {FaImage} from "react-icons/fa"
 import PaintBrush from "@strapi/icons/PaintBrush"
 import Pencil from "@strapi/icons/Pencil"
-import Paint from "@strapi/icons/Paint"
-import { IconContext } from "react-icons"
-import {BsCardList} from 'react-icons';
-
-
+import { IconContext, BsCardList } from "react-icons"
 
 
 // Layout

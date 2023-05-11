@@ -1,7 +1,7 @@
 import './component.css'
 
 import { NodeViewWrapper } from '@tiptap/react'
-import React, { useCallback, useEffect, useState } from 'react'
+import { useCallback, useEffect, useState } from 'react'
 
 export default ({ editor }) => {
   const [items, setItems] = useState([])
