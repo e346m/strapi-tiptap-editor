@@ -18,7 +18,7 @@ import Landscape from "@strapi/icons/Landscape"
 import {FaImage} from "react-icons/fa"
 import PaintBrush from "@strapi/icons/PaintBrush"
 import Pencil from "@strapi/icons/Pencil"
-import { IconContext, BsCardList } from "react-icons"
+import { IconContext } from "react-icons"
 
 
 // Layout
@@ -170,13 +170,13 @@ export const Toolbar = ({ editor, toggleMediaLib, settings }) => {
             </Select>
           </Box>
 
-          <IconButtonGroup className="button-group">
+          {/*<IconButtonGroup className="button-group">
             <IconButton
               icon={<BsCardList/>}
               label="ToC"
               onClick={() => editor.commands.insertContent("<toc></toc>")}
             />
-          </IconButtonGroup>
+  </IconButtonGroup> */}
 
           <IconButtonGroup className="button-group">
             { settings.bold ? (<IconButton
