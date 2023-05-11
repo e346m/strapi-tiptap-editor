@@ -1,7 +1,7 @@
 import './component.css'
 
 import { NodeViewWrapper } from '@tiptap/react'
-import { useCallback, useEffect, useState } from 'react'
+import React, { useCallback, useEffect, useState } from 'react'
 
 export const ToCArea = ({ editor }) => {
   const [items, setItems] = useState([])
