@@ -1,4 +1,4 @@
-import './Component.css'
+import './component.css'
 
 import { NodeViewWrapper } from '@tiptap/react'
 import React, { useCallback, useEffect, useState } from 'react'

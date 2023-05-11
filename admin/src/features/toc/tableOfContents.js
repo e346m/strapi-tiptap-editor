@@ -1,7 +1,7 @@
 import { mergeAttributes, Node } from '@tiptap/core'
 import { ReactNodeViewRenderer } from '@tiptap/react'
 
-import Component from './Component.jsx'
+import Component from './component.jsx'
 
 export default Node.create({
   name: 'tableOfContents',
