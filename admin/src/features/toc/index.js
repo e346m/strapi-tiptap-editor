@@ -1,1 +1,1 @@
-export { default } from "./tableOfContents";
+export * from "./tableOfContents";

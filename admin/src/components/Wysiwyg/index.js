@@ -46,7 +46,7 @@ import TextExtension from '@tiptap/extension-text'
 import { Color as ColorExtension } from '@tiptap/extension-color'
 import HighlightExtension from '@tiptap/extension-highlight'
 import {mergeDeep} from "../../utils/merge";
-import TOCExtension from '../../features/toc';
+import { TOCExtension } from '../../features/toc';
 
 
 const Wysiwyg = (opts) => {

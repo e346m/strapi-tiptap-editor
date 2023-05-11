@@ -1,41 +1,43 @@
 import { mergeAttributes, Node } from '@tiptap/core'
 import { ReactNodeViewRenderer } from '@tiptap/react'
 
-import Component from './component.jsx'
+import { ToCArea as Component } from './component.jsx'
 
-export default Node.create({
-  name: 'tableOfContents',
+const TOCExtension = Node.create({
+    name: 'tableOfContents',
 
-  group: 'block',
+    group: 'block',
 
-  atom: true,
+    atom: true,
 
-  parseHTML() {
-    return [
-      {
-        tag: 'toc',
-      },
-    ]
-  },
+    parseHTML() {
+        return [
+            {
+                tag: 'toc',
+            },
+        ]
+    },
 
-  renderHTML({ HTMLAttributes }) {
-    return ['toc', mergeAttributes(HTMLAttributes)]
-  },
+    renderHTML({ HTMLAttributes }) {
+        return ['toc', mergeAttributes(HTMLAttributes)]
+    },
 
-  addNodeView() {
-    return ReactNodeViewRenderer(Component)
-  },
+    addNodeView() {
+        return ReactNodeViewRenderer(Component)
+    },
 
-  addGlobalAttributes() {
-    return [
-      {
-        types: ['heading'],
-        attributes: {
-          id: {
-            default: null,
-          },
-        },
-      },
-    ]
-  },
+    addGlobalAttributes() {
+        return [
+            {
+                types: ['heading'],
+                attributes: {
+                    id: {
+                        default: null,
+                    },
+                },
+            },
+        ]
+    },
 })
+
+export TOCExtension
