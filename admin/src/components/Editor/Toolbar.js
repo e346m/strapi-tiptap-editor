@@ -20,6 +20,8 @@ import PaintBrush from "@strapi/icons/PaintBrush"
 import Pencil from "@strapi/icons/Pencil"
 import Paint from "@strapi/icons/Paint"
 import { IconContext } from "react-icons"
+import {BsCardList} from 'react-icons';
+
 
 
 
@@ -171,6 +173,14 @@ export const Toolbar = ({ editor, toggleMediaLib, settings }) => {
               { settings.headings.includes('h6') ? (<Option value={'h6'}>Heading 6</Option>) : null}
             </Select>
           </Box>
+
+          <IconButtonGroup className="button-group">
+            <IconButton
+              icon={<BsCardList/>}
+              label="ToC"
+              onClick={() => editor.commands.insertContent("<toc></toc>")}
+            />
+          </IconButtonGroup>
 
           <IconButtonGroup className="button-group">
             { settings.bold ? (<IconButton

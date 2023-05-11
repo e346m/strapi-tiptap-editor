@@ -1,0 +1,35 @@
+
+.toc {
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 0.5rem;
+    opacity: 0.75;
+    padding: 0.75rem;
+}
+.toc__list {
+    list-style: none;
+    padding: 0;
+}
+.toc__list::before {
+    content: "Table of Contents";
+    display: block;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.025rem;
+    opacity: 0.5;
+    text-transform: uppercase;
+}
+.toc__item a:hover {
+    opacity: 0.5;
+}
+.toc__item--3 {
+    padding-left: 1rem;
+}
+.toc__item--4 {
+    padding-left: 2rem;
+}
+.toc__item--5 {
+    padding-left: 3rem;
+}
+.toc__item--6 {
+    padding-left: 4rem;
+}
